@@ -1,0 +1,95 @@
+html{
+    background: url('img/darkheart.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.mainBody{
+    width: 100%;
+}
+
+.enemyDiv{
+    background: url('img/darkknights.png');
+    background-size: cover;
+    position: fixed;
+    top: 20%;
+    left: 60%;
+    height: 50%;
+    width: 30%;
+}
+
+.playerDiv{
+    background: url('img/darkknights1.png');
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    height: 50%;
+    width: 30%;
+}
+
+.healthBar{
+    background-color: black;
+    border-top: 1px solid #d4d0a6;
+    border-bottom: 1px solid #d4d0a6;
+}
+
+.healthBarPlayer{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    height: 1%;
+    width: 30%;
+}
+
+.healthBarEnemy{
+    position: fixed;
+    top: 85%;
+    left: 22%;
+    height: 1%;
+    width: 56%;
+}
+
+.enemyName{
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 1px #000000;
+    font-family: 900;
+    position: absolute;
+    top: 79%;
+    left: 23%;
+}
+
+.buttonAreaDiv{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    aspect-ratio: 1/1;
+    position: fixed;
+    bottom: 0;
+}
+
+.choiceButton{
+    background-color: #1a1a1a;
+    align-self: center;
+    color: #d4d0a6;
+    border-color: rgb(109, 109, 109);
+    border-style: solid;
+    border-width: 1px;
+    border-radius:  2px;
+    width: 30%;
+    height: 43%;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.buttonOffset{
+    align-self:flex-start;
+}
+
+.choiceButton:hover{
+    opacity: 1;
+    transform: scale(1.06);
+}
+

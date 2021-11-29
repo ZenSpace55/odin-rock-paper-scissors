@@ -1,3 +1,12 @@
+
+
+const buttons = document.querySelectorAll(".choiceButton");
+buttons.forEach((choiceButton) =>{
+    choiceButton.addEventListener('click', () =>{
+        alert(choiceButton.textContent);
+    });
+});
+
 function computerPlay(){
     let roll = Math.random();
     if (roll > .66666){
@@ -92,5 +101,4 @@ function game(){
 }
 
 
-
-game();
+//game();
