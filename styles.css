@@ -166,6 +166,7 @@ html{
     font-family: "Cormorant", serif;
     text-align: center;
     color: rgb(138, 19, 19);
+    text-shadow: 2px 1px #4e0707;
     position: fixed;
     width: 80%;
     height: 30%;
@@ -182,6 +183,7 @@ html{
     font-family: "Cormorant", serif;
     text-align: center;
     color: rgb(38, 122, 201);
+    text-shadow: 2px 1px #0f1330;
     position: fixed;
     width: 80%;
     height: 30%;
