@@ -1,10 +1,8 @@
 
 const gameText = document.querySelector(".gameText");
 //gameText.textContent = "hey hey people";
-let gameOver = false;
 
 const buttons = document.querySelectorAll(".choiceButton");
-
 buttons.forEach((choiceButton) =>{
     choiceButton.addEventListener('click', () =>{
         buttonHit(choiceButton.textContent);
@@ -17,6 +15,7 @@ resetBut.addEventListener('click', () =>{
     resetGame();
 });
 
+let gameOver = false;
 let playerLife = 5;
 let compLife = 10;
 
@@ -111,27 +110,6 @@ function buttonHit(choice){
     }
 }
 
-function game(){
-
-    console.log("BEGIN GAME!!!");
-    for (let i = 0; i < 5; i++){
-        console.log("ROUND " + (1 + i) + " BEGINS");
-        let computerChoice = computerPlay();
-        whoScored = playRound(playerInput(), computerChoice, playerScore, compScore);
-        if (whoScored === 1){
-            playerScore++;
-        }
-        else if (whoScored == 2){
-            compScore++;
-        }
-    }
-
-    if (playerScore > compScore){console.log("---PLAYER VICTORY---");}
-    else if (compScore > playerScore){console.log("---COMPUTER VICTORY---");}
-    else{console.log("---DRAW---");}
-    console.log("FINAL SCORE: " + playerScore + " to " + compScore);
-}
-
 function resetGame(){
     gameText.textContent = "Sword beats magic.  Magic beats bow.  Bow beats sword.";
     document.querySelector(".youDied").classList.remove('endTrigger');
@@ -142,6 +120,3 @@ function resetGame(){
     document.getElementById('#enemyLife').style.width = (compLife * 10) +"%";
     gameOver = false;
 }
-
-
-//game();

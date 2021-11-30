@@ -75,12 +75,6 @@ html{
     width: 100%;
 }
 
-.lifeBarEnemy{
-    background-color: rgb(34, 116, 27);
-    height: 80%;
-    width: 100%;
-}
-
 .enemyName{
     color: white;
     font-size: 22px;
@@ -120,6 +114,15 @@ html{
     transition: 0.3s;
 }
 
+.buttonOffset{
+    align-self:flex-start;
+}
+
+.choiceButton:hover{
+    opacity: 1;
+    transform: scale(1.06);
+}
+
 .resetButton{
     color: #d4d0a6;
     border-color: #d4d0a6;
@@ -151,15 +154,6 @@ html{
 }
 .bow{
     background-image: url('img/darkitem2.png');
-}
-
-.buttonOffset{
-    align-self:flex-start;
-}
-
-.choiceButton:hover{
-    opacity: 1;
-    transform: scale(1.06);
 }
 
 .youDied{
