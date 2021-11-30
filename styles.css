@@ -92,7 +92,7 @@ html{
     justify-content: space-around;
     align-items: center;
     height: 25%;
-    aspect-ratio: 1/1;
+    width: 12%;
     position: fixed;
     bottom: 0;
 }
