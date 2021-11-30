@@ -9,7 +9,8 @@ html{
 
 .enemyDiv{
     background: url('img/darkknights.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
     top: 20%;
     left: 60%;
@@ -19,7 +20,8 @@ html{
 
 .playerDiv{
     background: url('img/darkknights1.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
     top: 50%;
     left: 20%;
@@ -41,22 +43,53 @@ html{
     width: 30%;
 }
 
+.gameTextDiv{
+    position: fixed;
+    top: 2%;
+    left: 40%;
+    height: 15%;
+    width: 55%;
+}
+
+.gameText{
+    color: white;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 28px;
+    font-family: "Cormorant", serif;
+    text-shadow: 2px 1px #000000;
+    font-weight: 500;
+}
+
 .healthBarEnemy{
     position: fixed;
     top: 85%;
-    left: 22%;
+    left: 25%;
     height: 1%;
     width: 56%;
 }
 
+.lifeBar{
+    background-color: rgb(138, 19, 19);
+    height: 80%;
+    width: 100%;
+}
+
+.lifeBarEnemy{
+    background-color: rgb(34, 116, 27);
+    height: 80%;
+    width: 100%;
+}
+
 .enemyName{
     color: white;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: "Cormorant", serif;
     text-shadow: 2px 1px #000000;
-    font-family: 900;
+    font-weight: 500;
     position: absolute;
     top: 79%;
-    left: 23%;
+    left: 26%;
 }
 
 .buttonAreaDiv{
@@ -71,17 +104,53 @@ html{
 }
 
 .choiceButton{
-    background-color: #1a1a1a;
+    background-color: #0e0e0e;
+    background-size: contain;
+    background-repeat: no-repeat;
     align-self: center;
+    font-size: 0;
     color: #d4d0a6;
-    border-color: rgb(109, 109, 109);
+    border-color: #d4d0a6;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius:  2px;
     width: 30%;
     height: 43%;
     opacity: 0.8;
     transition: 0.3s;
+}
+
+.resetButton{
+    color: #d4d0a6;
+    border-color: #d4d0a6;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:  2px;
+    background-color: #0e0e0e;
+    font-size: 20px;
+    font-family: "Cormorant", serif;
+    text-shadow: 2px 1px #000000;
+    font-weight: 500;
+    position: absolute;
+    left: 85%;
+    top: 90%;
+    width: 12%;
+    height: 4%;
+    transition: 0.3s;
+}
+
+.resetButton:hover{
+    transform: scale(1.06);
+}
+
+.sword{
+    background-image: url('img/darkitem1.png');
+}
+.magic{
+    background-image: url('img/darkitem3.png');
+}
+.bow{
+    background-image: url('img/darkitem2.png');
 }
 
 .buttonOffset{
@@ -93,3 +162,38 @@ html{
     transform: scale(1.06);
 }
 
+.youDied{
+    opacity: 0;
+    transition: opacity 2s;
+    transition-timing-function: ease-in;
+    font-size: 140px;
+    font-weight: 500;
+    font-family: "Cormorant", serif;
+    text-align: center;
+    color: rgb(138, 19, 19);
+    position: fixed;
+    width: 80%;
+    height: 30%;
+    top: 40%;
+    left: 10%;
+}
+
+.youWin{
+    opacity: 0;
+    transition: opacity 2s;
+    transition-timing-function: ease-in;
+    font-size: 100px;
+    font-weight: 500;
+    font-family: "Cormorant", serif;
+    text-align: center;
+    color: rgb(38, 122, 201);
+    position: fixed;
+    width: 80%;
+    height: 30%;
+    top: 40%;
+    left: 10%;
+}
+
+.endTrigger{
+    opacity: 1;
+}

@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    
 <div class="enemyDiv">
 </div>
 <div class="playerDiv">
 </div>
 
 <div class="healthBar healthBarPlayer">
-
+    <div class="lifeBar" id=#playerLife></div>
 </div>
 
 <div class="healthBar healthBarEnemy">
-
+    <div class="lifeBar" id="#enemyLife"></div>
 </div>
 
-<p class="enemyName">Knight of Smoulder</p>
+<p class="enemyName">Smouldering Knight</p>
 
 <div class="mainBody">
     <div class="buttonAreaDiv">
-        <button class="choiceButton">One</button>
-        <button class="choiceButton buttonOffset">Two</button>
-        <button class="choiceButton">Three</button>
+        <button class="choiceButton sword">SWORD</button>
+        <button class="choiceButton buttonOffset magic">MAGIC</button>
+        <button class="choiceButton bow">BOW</button>
     </div>
 </div>
+
+<div class="gameTextDiv">
+    <p class="gameText">Sword beats magic.  Magic beats bow.  Bow beats sword.</p>
+</div>
+
+<div class="youDied">YOU DIED</div>
+<div class="youWin">KNIGHT VANQUISHED!</div>
+<button class="resetButton">Reset Game</button>
 </body>
 </html>
