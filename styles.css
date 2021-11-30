@@ -134,6 +134,7 @@ html{
     font-family: "Cormorant", serif;
     text-shadow: 2px 1px #000000;
     font-weight: 500;
+    line-height: 50%;
     position: absolute;
     left: 85%;
     top: 90%;
